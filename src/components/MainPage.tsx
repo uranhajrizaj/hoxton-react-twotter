@@ -100,6 +100,7 @@ export function MainPage (){
                                 likes:post.likes+1
                             })
                         })
+
                     }
                 }><AiOutlineHeart/></button>
                 <p>{post.likes}likes</p>
