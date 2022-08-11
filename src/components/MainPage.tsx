@@ -69,7 +69,7 @@ export function MainPage (){
           </div>
           </div>
     
-          {users.map(user=>( user.id!==users[2].id ?
+          {users.map(user=>( ( user.id!==users[2].id )?
                 user.posts.map(post=>(
              <li >
           <div className="tweet">
@@ -91,6 +91,15 @@ export function MainPage (){
                 <button className="like-button" onClick={
                     ()=>{
                         updatePostLikes(post.id)
+                        fetch(`http://localhost:4000/posts/${post.id}`,{
+                            method:"PATCH",
+                            headers:{
+                                "Content-Type":"application/json"
+                            },
+                            body:JSON.stringify({
+                                likes:post.likes+1
+                            })
+                        })
                     }
                 }><AiOutlineHeart/></button>
                 <p>{post.likes}likes</p>
