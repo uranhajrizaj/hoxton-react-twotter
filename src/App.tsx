@@ -8,7 +8,6 @@ function App() {
   return (
     <div className="App">
       <LeftMenu/>
-      <MainPage/>
       <Routes>
           <Route index element={<Navigate to="/home" />} />
           <Route path="/home" element={<MainPage/>} />

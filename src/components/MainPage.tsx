@@ -51,6 +51,7 @@ export function MainPage (){
     }
     return (
         <div className="main">
+
         <ul className="post-list">       
         <div className="post-a-tweet" >
             <div className="user-image">
@@ -103,7 +104,7 @@ export function MainPage (){
 
                     }
                 }><AiOutlineHeart/></button>
-                <p>{post.likes}likes</p>
+                <p>{`${post.likes} likes`}</p>
                      </div>
           
         </div>
