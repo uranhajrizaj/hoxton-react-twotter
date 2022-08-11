@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.App{
+    display:grid;
+    padding: 2rem;
+    grid-template:
+    "left_menu main" 1fr/ 
+     20rem  1fr;  
+     gap:20px;
+}

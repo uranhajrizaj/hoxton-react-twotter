@@ -1,0 +1,127 @@
+.main{
+    display:grid;
+    grid-auto-flow: row;
+    gap:20px;
+    grid-area: main;
+    place-items: start ;
+}
+.post-list{
+    display:grid;
+    grid-auto-flow: row;
+    gap:20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: start ;
+    list-style-type: none;
+}
+.post-a-tweet{
+    display:grid;
+    grid-auto-flow: column;
+    /* width: 20rem; */
+}
+.user-image{
+    display:grid;
+    place-content: start end ;
+}
+.user-image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+   
+}
+.tweet-info{
+    display: grid;
+    grid-gap: 5px;
+    grid-auto-flow: row;
+}
+.tweet-info textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 10px;
+}
+.tweet-button{
+    color: white;
+    background-color: #1da0f2ad;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor:pointer
+}
+.tweet-options{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.tweet-options-icons{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    justify-content: space-between;
+    align-content: center;
+    color:#1da0f2ad;
+    cursor:pointer
+}
+.tweet-button:hover{
+   background-color: #1da0f2;
+}
+.tweet-options-icons:hover{
+    color: #1da0f2;
+}
+
+.tweet{
+    display: grid;
+    grid-auto-flow: row;
+
+}
+.tweet-header{
+    display:grid;
+    grid-auto-flow: column;
+    place-content: start;
+    height: 40px;
+}
+
+.tweet-header img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+   
+}
+.tweet-header-info{
+    display:grid;
+    grid-auto-flow: column;
+    gap:5px;
+    place-items: start center ;
+  
+}
+.tweet-body{
+    display:grid;
+    place-content: center;
+}
+.tweet-body img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.tweet-footer{
+    display:grid;
+    grid-auto-flow: column;
+    place-content: start;
+   gap:5px;
+}
+.like-button{
+    font-size: 1rem;
+    cursor:pointer;
+    all:unset
+}
+.like-button:hover{
+    color: #1da0f2;
+}
