@@ -30,6 +30,25 @@ export function MainPage (){
         .then(res=>res.json())
         .then(data=>setUsers(data))
     },[])
+
+    function updatePostLikes(id:number){
+        const updatedUsers=users.map(user=>{
+            return{
+                ...user,
+                posts:user.posts.map(post=>{
+                    if(post.id===id){
+                        return{
+                            ...post,
+                            likes:post.likes+1
+                        }
+                    }
+                    return post
+                })
+            }
+        })
+        console.log(updatedUsers)
+        setUsers(updatedUsers)
+    }
     return (
         <div className="main">
         <ul className="post-list">       
@@ -52,7 +71,7 @@ export function MainPage (){
     
           {users.map(user=>( user.id!==users[2].id ?
                 user.posts.map(post=>(
-             <li key={user.id}>
+             <li >
           <div className="tweet">
              <div className="tweet-header">
                 <img src={user.img}></img>
@@ -69,7 +88,11 @@ export function MainPage (){
             </div>
            
             <div className="tweet-footer">
-                <button className="like-button"><AiOutlineHeart/></button>
+                <button className="like-button" onClick={
+                    ()=>{
+                        updatePostLikes(post.id)
+                    }
+                }><AiOutlineHeart/></button>
                 <p>{post.likes}likes</p>
                      </div>
           

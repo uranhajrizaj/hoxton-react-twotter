@@ -4,7 +4,8 @@
       "id": 1,
       "name": "John Doe",
       "username": "johndoe",
-      "img": "https://images.pexels.com/photos/39866/entrepreneur-startup-start-up-man-39866.jpeg?auto=compress&cs=tinysrgb&w=600"
+      "img": "https://images.pexels.com/photos/39866/entrepreneur-startup-start-up-man-39866.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "likes": 18
     },
     {
       "id": 2,
@@ -20,7 +21,7 @@
     },
     {
       "id": 4,
-      "name": "Samuel Jackson", 
+      "name": "Samuel Jackson",
       "username": "samueljackson",
       "img": "https://images.pexels.com/photos/834894/pexels-photo-834894.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
@@ -35,14 +36,14 @@
     {
       "id": 1,
       "title": "Hello from the other side",
-      "likes": 15,
+      "likes": 17,
       "img": "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600",
       "userId": 1
     },
     {
       "id": 2,
       "title": "Hi everyone",
-      "likes": 158,
+      "likes": 159,
       "img": "https://images.pexels.com/photos/1955134/pexels-photo-1955134.jpeg?auto=compress&cs=tinysrgb&w=600",
       "userId": 1
     },
@@ -54,5 +55,4 @@
       "userId": 2
     }
   ]
- 
 }
